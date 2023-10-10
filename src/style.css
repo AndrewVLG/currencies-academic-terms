@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Kreon';
+    src: url('./fonts/Kreon-VariableFont_wght.ttf');
+}
+html {
+    font-size: calc(100vw / 22);
+}
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    font-family: 'Kreon';
+    font-size: 3rem;
+    margin: 0;
+}
