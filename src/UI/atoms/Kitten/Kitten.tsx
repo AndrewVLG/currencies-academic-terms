@@ -13,7 +13,7 @@ export const Kitten = memo(() => {
           right: 0,
           zIndex: 10,
         }}
-        src={require('../../../assets/kitten.png')}
+        src={require('../../../shared/assets/kitten.png')}
       />
     </Box>
   )

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kreon';
-    src: url('./fonts/Kreon-VariableFont_wght.ttf');
+    src: url('./shared//fonts/Kreon-VariableFont_wght.ttf');
 }
 html {
     font-size: calc(100vw / 22);
