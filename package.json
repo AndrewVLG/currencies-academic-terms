@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env BACKEND_URL=https://api.coinbase.com/v2 webpack serve"
+    "dev": "cross-env BACKEND_URL=https://api.coinbase.com/v2 webpack serve",
+    "build": "cross-env BACKEND_URL=https://api.coinbase.com/v2 webpack"
   },
   "keywords": [],
   "author": "AndrewVLG",
@@ -12,7 +13,15 @@
   "devDependencies": {
     "@babel/preset-react": "^7.22.15",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@svgr/webpack": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
     "css-loader": "^6.8.1",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "filemanager-webpack-plugin": "^8.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
@@ -20,8 +29,6 @@
     "react-refresh": "^0.14.0",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
-    "url-loader": "^4.1.1",
-    "@svgr/webpack": "^8.1.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

@@ -4,7 +4,6 @@
 "jsxSingleQuote": true,
 "semi": false,
 "trailingComma": "all",
-"arrowParens": "always",
 "htmlWhitespaceSensitivity": "strict",
 "endOfLine": "lf"
 }
