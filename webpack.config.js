@@ -37,7 +37,6 @@ module.exports = {
                 errors: true,
                 warnings: true,
             },
-            progress: true,
         },
     },
     

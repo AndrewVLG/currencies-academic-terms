@@ -34,6 +34,7 @@ module.exports = {
 	],
 	'rules': {
 		'prettier/prettier': 'off',
-		"react/display-name": 'off'
+		"react/display-name": 'off',
+		"react/prop-types": 'warn'
 	}
 }
