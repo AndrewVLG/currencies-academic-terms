@@ -27,10 +27,18 @@ module.exports = {
     },
 
     devServer: {
+
         port: 3000,
         hot: true,
         open: true,
         historyApiFallback: true,
+        client: {
+            overlay: {
+                errors: true,
+                warnings: true,
+            },
+            progress: true,
+        },
     },
     
     module: {
@@ -41,13 +49,13 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif|webp|ico)$/i,
-                use: ['url-loader'],
-                type: 'asset/resource',
+                test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset'
+
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)$/i,
-                type: 'asset/resource',
+
             },
             {
                 test: /\.jsx?$/,
