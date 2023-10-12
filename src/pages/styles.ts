@@ -7,11 +7,15 @@ export const layout: SxProps = {
   flexDirection: 'column',
 }
 
-export const main: SxProps = {
-  height: '6.1rem',
+export const main = {
+  height: '6rem',
   backgroundColor: '#000000',
   color: '#FFFFFF',
   zIndex: 20,
+  transition: 'height 0.5s',
+  '@media(orientation: portrait)': {
+    height: '71vh',
+  },
 }
 
 export const error: SxProps = {

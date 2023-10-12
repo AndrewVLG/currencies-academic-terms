@@ -3,30 +3,28 @@ import { SxProps } from '@mui/system'
 export const selectWrapper: SxProps = {
   width: '4rem',
   mb: '0.5rem',
+  height: '1rem',
   '& .MuiInputBase-root': {
-    width: '4rem',
+    width: '100%',
     height: '1rem',
     borderRadius: '0.2rem',
     fontSize: '0.5rem',
     fontFamily: 'Kreon',
+    '@media(max-width:600px)': {
+      height: '100%',
+    },
+  },
+  '@media(max-width:600px)': {
+    height: '2rem',
+    width: '50%',
   },
 }
 
 export const MenuProps = {
   PaperProps: {
     style: {
-      maxHeight: '4rem',
+      maxHeight: '30%',
       width: '4rem',
     },
   },
-}
-export const menuItem: SxProps = {
-  fontSize: '0.5rem',
-  fontFamily: 'Kreon',
-  '&:hover': { backgroundColor: '#FFFFFF' },
-  '&.MuiButtonBase-root.Mui-selected': {
-    backgroundColor: '#F0EFEF',
-    '&:hover': { backgroundColor: 'none' },
-  },
-  '&. Mui-focusVisible': { backgroundColor: '#FFFFFF' },
 }

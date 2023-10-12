@@ -1,7 +1,8 @@
 import { Box } from '@mui/material'
-import { wrapper } from './styles'
 import { CatLogo } from '../../'
 import { SelectInHeader } from '../../../Component'
+import { wrapper } from './styles'
+
 const marginLeft = { ml: '1rem' }
 export const Header = () => {
   return (

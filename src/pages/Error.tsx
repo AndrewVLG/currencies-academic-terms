@@ -1,6 +1,7 @@
+import { FC } from 'react'
 import { Box, Typography } from '@mui/material'
 import { error } from './styles'
-import { FC } from 'react'
+
 interface Props {
   message: string
 }

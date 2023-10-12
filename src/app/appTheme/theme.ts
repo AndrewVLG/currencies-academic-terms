@@ -21,5 +21,19 @@ export const theme = createTheme({
         },
       },
     },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontSize: '0.5rem',
+          fontFamily: 'Kreon',
+          '&:hover': { backgroundColor: '#FFFFFF' },
+          '&.MuiButtonBase-root.Mui-selected': {
+            backgroundColor: '#F0EFEF',
+            '&:hover': { backgroundColor: 'none' },
+          },
+          '&. Mui-focusVisible': { backgroundColor: '#FFFFFF' },
+        },
+      },
+    },
   },
 })

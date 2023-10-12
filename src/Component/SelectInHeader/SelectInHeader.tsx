@@ -8,12 +8,13 @@ import {
   SelectProps,
 } from '@mui/material'
 import { ExpandMore } from '@mui/icons-material'
+
 import {
   fetchCurrencies,
   setActiveCurrency,
 } from '../../app/redux/slice/currencies'
 import { useAppDispatch, useAppSelector } from '../../app/redux/store'
-import { MenuProps, menuItem, selectWrapper } from './style'
+import { MenuProps, selectWrapper } from './style'
 
 interface Props extends Pick<SelectProps, 'sx'> {}
 
@@ -22,19 +23,13 @@ export const SelectInHeader: FC<Props> = memo(({ sx = {} }) => {
   const dispatch = useAppDispatch()
 
   const items = list.map((item) => (
-    <MenuItem
-      value={item.id}
-      key={item.id}
-      disableTouchRipple
-      divider
-      sx={menuItem}
-    >
+    <MenuItem value={item.id} key={item.id} disableTouchRipple divider>
       {item.id}
     </MenuItem>
   ))
 
   const handleChange = useCallback((event: SelectChangeEvent) => {
-    dispatch(setActiveCurrency(event.target.value as string))
+    dispatch(setActiveCurrency(event.target.value))
   }, [])
 
   useEffect(() => {
