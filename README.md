@@ -1,5 +1,6 @@
 Описание ниже :)
-![main](https://github.com/AndrewVLG/currencies-academic-terms/assets/114805157/6b25ff62-e297-4fa6-bb3a-745293f324f4)
+
+![main](https://github.com/AndrewVLG/currencies-academic-terms/assets/114805157/fea45c9f-f066-4e63-ba9a-ad335ffe2ac0)
 ![not found](https://github.com/AndrewVLG/currencies-academic-terms/assets/114805157/7e9f9294-7990-43f8-867a-0b04ec31315a)
 
 - Дев сервер - npm run dev
