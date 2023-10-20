@@ -1,5 +1,6 @@
 import { FC, memo } from 'react'
 import { Box, BoxProps, Typography } from '@mui/material'
+
 import { logoContainer } from './style'
 
 interface Props extends Pick<BoxProps, 'sx'> {}

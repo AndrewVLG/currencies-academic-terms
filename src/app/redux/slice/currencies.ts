@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
+
 import { getCurrencies } from '../../axios/getCurrencies'
 import { Currency } from 'shared/dto/currencies'
 

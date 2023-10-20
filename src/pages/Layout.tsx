@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Box, useMediaQuery } from '@mui/material'
+
 import { Header, Kitten } from '../UI'
 import { layout } from './styles'
 

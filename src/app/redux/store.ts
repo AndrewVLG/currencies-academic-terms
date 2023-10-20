@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+
 import { currenciesReducer } from './slice/currencies'
-import { TypedUseSelectorHook, useDispatch } from 'react-redux'
-import { useSelector } from 'react-redux'
 
 const reducer = combineReducers({
   currencies: currenciesReducer,

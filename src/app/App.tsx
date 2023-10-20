@@ -2,6 +2,7 @@ import { Provider } from 'react-redux'
 import { RouterProvider } from 'react-router-dom'
 import { ErrorBoundary } from 'react-error-boundary'
 import { ThemeProvider } from '@mui/material'
+
 import { theme } from './appTheme/theme'
 import { store } from './redux/store'
 import { router } from './routing/router'

@@ -7,9 +7,9 @@ import {
   Typography,
 } from '@mui/material'
 
-import { alert, main } from './styles'
 import { useAppDispatch, useAppSelector } from '../app/redux/store'
 import { clearError } from '../app/redux/slice/currencies'
+import { alert, main } from './styles'
 
 const anchorOrigin: SnackbarOrigin = { horizontal: 'center', vertical: 'top' }
 

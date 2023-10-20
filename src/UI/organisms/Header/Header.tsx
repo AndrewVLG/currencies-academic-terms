@@ -1,4 +1,5 @@
 import { Box } from '@mui/material'
+
 import { CatLogo } from '../../'
 import { SelectInHeader } from '../../../Component'
 import { wrapper } from './styles'
