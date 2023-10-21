@@ -3,9 +3,10 @@ import { Box, BoxProps, Typography } from '@mui/material'
 
 import { logoContainer } from './style'
 
-interface Props extends Pick<BoxProps, 'sx'> {}
-
+const title = 'CAT'
 const arrayWithText = ['currencies', 'academic', 'terms']
+
+interface Props extends Pick<BoxProps, 'sx'> {}
 
 export const CatLogo: FC<Props> = memo(({ sx = {} }) => {
   const sxProps = { ...logoContainer, ...sx }
@@ -16,7 +17,7 @@ export const CatLogo: FC<Props> = memo(({ sx = {} }) => {
   ))
   return (
     <Box sx={sxProps}>
-      <Typography variant='h1'>CAT</Typography>
+      <Typography variant='h1'>{title}</Typography>
       <div>{text}</div>
     </Box>
   )

@@ -1,13 +1,20 @@
 import { createTheme } from '@mui/material'
 
+export const colors = {
+  black: '#000000',
+  white: '#FFFFFF',
+  grey: '#F0EFEF',
+}
+export type Colors = typeof colors
+
 export const theme = createTheme({
   palette: {
     info: {
-      main: '#000000',
+      main: colors.black,
     },
     appTheme: {
-      white: '#FFFFFF',
-      dark: '#000000',
+      white: colors.white,
+      black: colors.black,
     },
   },
   components: {
@@ -26,12 +33,12 @@ export const theme = createTheme({
         root: {
           fontSize: '0.5rem',
           fontFamily: 'Kreon',
-          '&:hover': { backgroundColor: '#FFFFFF' },
+          '&:hover': { backgroundColor: colors.white },
           '&.MuiButtonBase-root.Mui-selected': {
-            backgroundColor: '#F0EFEF',
+            backgroundColor: colors.grey,
             '&:hover': { backgroundColor: 'none' },
           },
-          '&. Mui-focusVisible': { backgroundColor: '#FFFFFF' },
+          '&. Mui-focusVisible': { backgroundColor: colors.white },
         },
       },
     },

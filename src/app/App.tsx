@@ -20,6 +20,7 @@ export const App = () => {
   )
 }
 
+const errorMessage = 'Что-то пошло не так'
 function fallbackRender() {
-  return <Error message='Что-то пошло не так' />
+  return <Error message={errorMessage} />
 }

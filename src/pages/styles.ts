@@ -1,4 +1,5 @@
 import { SxProps } from '@mui/system'
+import { colors } from '../app/appTheme/theme'
 
 export const layout: SxProps = {
   height: '100vh',
@@ -9,8 +10,8 @@ export const layout: SxProps = {
 
 export const main = {
   height: '6rem',
-  backgroundColor: '#000000',
-  color: '#FFFFFF',
+  backgroundColor: colors.black,
+  color: colors.white,
   zIndex: 20,
   transition: 'height 0.5s',
   '@media(orientation: portrait)': {
